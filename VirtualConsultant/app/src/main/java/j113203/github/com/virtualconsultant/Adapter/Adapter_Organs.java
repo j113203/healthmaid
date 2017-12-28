@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import j113203.github.com.virtualconsultant.Activity.v1._Input;
-import j113203.github.com.virtualconsultant.Activity.v1._Menu;
+import j113203.github.com.virtualconsultant.Activity.v2._Menu;
 import j113203.github.com.virtualconsultant.Model.Model_Organs;
 import j113203.github.com.virtualconsultant.R;
 
@@ -55,14 +55,19 @@ public class Adapter_Organs extends BaseAdapter {
 
         final ImageView organ = view.findViewById(R.id.organ);
         organ.setImageResource(model.getImage());
+        organ.setTag(false);
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                organ.setColorFilter(Color.parseColor("#F44336"));
-                context.startActivityForResult(new Intent(context, _Input.class), model.getId());
-
+                Boolean clicked = (boolean) organ.getTag();
+                if (!clicked) {
+                    organ.setColorFilter(Color.parseColor("#F44336"));
+                }else{
+                    organ.clearColorFilter();
+                }
+                organ.setTag(!clicked);
             }
         });
 

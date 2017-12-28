@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/organs_bg"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="4dp"/>
+
+    <ImageView
+        android:tint="#4dafad"
+        tools:src="@drawable/organs_1"
+        android:id="@+id/organ"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="4dp"/>
+
+</RelativeLayout>

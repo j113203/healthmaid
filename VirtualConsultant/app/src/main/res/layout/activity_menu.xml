@@ -1,100 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_menu"
+
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/input_bg">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_menu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/input_bg">
 
-        <RelativeLayout
-            android:paddingVertical="20dp"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="176">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <ListView
-                android:id="@+id/organsList"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="176"
+                android:paddingVertical="20dp">
 
-        </RelativeLayout>
+                <ListView
+                    android:id="@+id/organsList"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="574">
+            </RelativeLayout>
 
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="574">
 
-    </LinearLayout>
+            </RelativeLayout>
 
-    <!--<RelativeLayout-->
-    <!--android:id="@+id/title"-->
-    <!--android:layout_width="128dp"-->
-    <!--android:layout_height="115dp"-->
-    <!--android:background="@drawable/title">-->
+        </LinearLayout>
 
-    <!--<TextView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:rotation="-45"-->
-    <!--android:textSize="20sp"-->
-    <!--android:text="Symptoms"-->
-    <!--android:textColor="#4dafad" />-->
+    </RelativeLayout>
 
-    <!--</RelativeLayout>-->
-
-    <!--<LinearLayout-->
-    <!--android:layout_marginTop="-20dp"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:layout_marginHorizontal="30dp"-->
-    <!--android:layout_marginVertical="20dp"-->
-    <!--android:layout_below="@id/title">-->
-
-    <!--<RelativeLayout-->
-    <!--android:layout_marginEnd="20dp"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--tools:background="#fff"-->
-    <!--android:layout_height="match_parent">-->
-
-    <!--<ListView-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:id="@+id/organsLeft"-->
-    <!--android:layout_width="60dp"-->
-    <!--android:layout_height="wrap_content"/>-->
-
-    <!--</RelativeLayout>-->
-
-    <!--<ImageView-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:src="@drawable/body" />-->
-
-    <!--<RelativeLayout-->
-    <!--android:layout_marginStart="20dp"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--tools:background="#fff"-->
-    <!--android:layout_height="match_parent">-->
-
-    <!--<ListView-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:id="@+id/organsRight"-->
-    <!--android:layout_width="60dp"-->
-    <!--android:layout_height="wrap_content"/>-->
-
-    <!--</RelativeLayout>-->
-
-    <!--</LinearLayout>-->
-
-</RelativeLayout>
+</io.codetail.widget.RevealFrameLayout>

@@ -3,6 +3,7 @@ package j113203.github.com.virtualconsultant.Activity.v2;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -23,6 +24,7 @@ public class _Menu extends Activity {
 
         setContentView(R.layout.activity_menu);
 
+        activity_menu = findViewById(R.id.activity_menu);
         organsList = findViewById(R.id.organsList);
 
         Adapter_Organs adapter_organs_right = new Adapter_Organs(_Menu.this, new Model_Organs[]{
@@ -78,8 +80,12 @@ public class _Menu extends Activity {
         organsList.setVerticalScrollBarEnabled(false);
         organsList.setAdapter(adapter_organs_right);
 
+        _Splash.anim(activity_menu, null);
+
     }
 
     private ListView organsList;
+
+    private RelativeLayout activity_menu;
 
 }

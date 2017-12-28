@@ -1,18 +1,15 @@
 package j113203.github.com.virtualconsultant.Adapter;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import j113203.github.com.virtualconsultant.Activity._Input;
-import j113203.github.com.virtualconsultant.Activity._Menu;
+import j113203.github.com.virtualconsultant.Activity.v1._Input;
+import j113203.github.com.virtualconsultant.Activity.v1._Menu;
 import j113203.github.com.virtualconsultant.Model.Model_Organs;
 import j113203.github.com.virtualconsultant.R;
 

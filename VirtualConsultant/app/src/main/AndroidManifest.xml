@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:screenOrientation="portrait"
-            android:name=".Activity._Splash"
+            android:name=".Activity.v2._Splash"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,11 +21,11 @@
         </activity>
         <activity
             android:screenOrientation="portrait"
-            android:name=".Activity._Menu"
+            android:name=".Activity.v1._Menu"
             android:windowSoftInputMode="adjustPan"/>
         <activity
             android:screenOrientation="portrait"
-            android:name=".Activity._Input"
+            android:name=".Activity.v1._Input"
             android:windowSoftInputMode="adjustPan"/>
     </application>
 

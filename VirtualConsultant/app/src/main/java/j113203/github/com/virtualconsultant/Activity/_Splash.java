@@ -1,4 +1,4 @@
-package j113203.github.com.virtualconsultant.Activity.v2;
+package j113203.github.com.virtualconsultant.Activity;
 
 import android.animation.Animator;
 import android.app.Activity;
@@ -40,18 +40,17 @@ public class _Splash extends Activity {
                             @Override
                             public void run() {
                                 activity_splash.setVisibility(View.GONE);
+                                startActivity(new Intent(_Splash.this, _Menu.class));
+                                finish();
+                                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                             }
                         });
-                        startActivity(new Intent(_Splash.this, _Menu.class));
-                        finish();
-                        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     }
 
                 }, 1, TimeUnit.SECONDS);
 
             }
         });
-
     }
 
     @Override
